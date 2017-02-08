@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>title</th>
+                <th>date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+            <tr>
+                <th>{{ article.title }}</th>
+                <th>{{ article.date }}</th>
+                <th>{{ article.text }}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form action="/write" method="POST">
+    <input name="title" class="form-control" />
+    <textarea name="text" class="form-control" rows="3"></textarea>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}
